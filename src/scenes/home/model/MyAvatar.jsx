@@ -8,7 +8,7 @@ import vertex from "../shaders/vertex.glsl";
 import Avatar from "./MyAvatar2.glb";
 
 const materialParams = {};
-materialParams.color = "red";
+materialParams.color = "yellow";
 
 const CustomShaderMaterial = shaderMaterial(
   {
