@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --box-bg: #7469b6;
+  --box-border-color: black;
+  --button-color: #ffe6e6;
+}
+
 #root {
-  background-color: #fcd7ad;
-  color: #4e148c;
+  background-color: #ffe6e6;
+  color: #f6f6f6;
 }

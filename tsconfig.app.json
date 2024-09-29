@@ -18,10 +18,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "include": ["src"],
-  "paths": {
-    "@/*": ["./src/*"]
-  }
+  "include": [
+    "src",
+    "global.d.ts" // Make sure this file is included if necessary
+  ]
 }
