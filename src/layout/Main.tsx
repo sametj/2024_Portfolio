@@ -1,3 +1,5 @@
+import About from "@/scenes/about/About";
+import Projects from "@/scenes/projects/Projects";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Home from "../scenes/home/Home";
@@ -25,23 +27,23 @@ export default function Main() {
         <div className="row-span-1 row-start-1 flex rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8">
           <Home />
         </div>
-        <div className="row-span-1 row-start-2 flex rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8">
-          <Canvas>
+        <div className="relative row-span-1 row-start-2 flex rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8">
+          <Canvas
+            style={{
+              position: "absolute",
+              zIndex: 0,
+            }}
+          >
             <OrbitControls />
             <mesh>
               <boxGeometry args={[1, 1, 1]} />
               <meshNormalMaterial />
             </mesh>
           </Canvas>
+          <About />
         </div>
         <div className="row-span-2 flex rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8">
-          <Canvas>
-            <OrbitControls />
-            <mesh>
-              <boxGeometry args={[1, 1, 1]} />
-              <meshNormalMaterial />
-            </mesh>
-          </Canvas>
+          <Projects />
         </div>
 
         <div className="roundex-2xl row-span-2 grid auto-rows-auto gap-10">

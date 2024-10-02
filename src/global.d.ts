@@ -27,7 +27,7 @@ declare module "*.jsx" {
 
 
 
-  const MyAvatar: FC<MeshProps & { position: [number, number, number]; scale: number }>;
+  const MyAvatar: FC<MeshProps & { position?: [number, number, number]; scale?: number }>;
 
   export default MyAvatar;
 
