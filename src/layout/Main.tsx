@@ -1,7 +1,5 @@
 import About from "@/scenes/about/About";
-import Projects from "@/scenes/projects/Projects";
-import { OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import Projects from "@/scenes/projects/Projects.jsx";
 import Home from "../scenes/home/Home";
 import SocialButton from "./components/SocialButton";
 import discord from "/discord-logo-duotone.svg";
@@ -28,18 +26,6 @@ export default function Main() {
           <Home />
         </div>
         <div className="relative row-span-1 row-start-2 flex rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8">
-          <Canvas
-            style={{
-              position: "absolute",
-              zIndex: 0,
-            }}
-          >
-            <OrbitControls />
-            <mesh>
-              <boxGeometry args={[1, 1, 1]} />
-              <meshNormalMaterial />
-            </mesh>
-          </Canvas>
           <About />
         </div>
         <div className="row-span-2 flex rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8">
