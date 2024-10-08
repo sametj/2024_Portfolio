@@ -28,7 +28,7 @@ export default function Main() {
         <div className="relative row-span-1 row-start-2 flex rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8">
           <About />
         </div>
-        <div className="row-span-2 flex rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8">
+        <div className="relative row-span-2 flex rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8">
           <Projects />
         </div>
 
