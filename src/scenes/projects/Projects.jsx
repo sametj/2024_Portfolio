@@ -9,26 +9,23 @@ export default function Projects() {
 
   return (
     <>
-      <button
-        onClick={() => setViewProject((state) => !state)}
-        className="absolute z-10 mx-auto w-100 bg-red-200 p-8"
-      >
-        Test
-      </button>
+      <div className="absolute inset-x-0 bottom-0 z-10 flex w-full justify-center p-40">
+        <button
+          onClick={() => setViewProject((state) => !state)}
+          className="w-200 touch-none rounded-lg bg-red-200 p-8"
+        >
+          View Projects
+        </button>
+      </div>
       <Canvas
-        className="rounded-lg shadow-2xl"
+        className="project_canvas rounded-lg shadow-2xl"
         dpr={[1, 1.5]}
         camera={{ fov: 70, position: [0, 2, 15] }}
       >
         <color attach="background" args={["#191920"]} />
         <fog attach="fog" args={["#191920", 0, 15]} />
         <group position={[0, -0.5, 0]}>
-          <ambientLight intensity={0.5} />
-          <Desk
-            scale={0.3}
-            rotation-y={-Math.PI / 2}
-            position={[-1.6, -0.02, 10.5]}
-          />
+          <Desk scale={0.3} position={[0.6, 0.73, 10.5]} />
           <mesh rotation={[-Math.PI / 2, 0, 0]}>
             <planeGeometry args={[50, 50]} />
             <MeshReflectorMaterial

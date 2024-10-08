@@ -34,7 +34,7 @@ export default function Main() {
 
         <div className="roundex-2xl row-span-2 grid auto-rows-auto gap-10">
           <div className="flex rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8">
-            Current Projects
+            Skills
           </div>
           <div className="flex rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8">
             Upcoming Projects
