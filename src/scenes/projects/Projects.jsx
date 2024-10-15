@@ -12,7 +12,7 @@ export default function Projects() {
       <div className="absolute inset-x-0 bottom-0 z-10 flex w-full justify-center p-40">
         <button
           onClick={() => setViewProject((state) => !state)}
-          className="w-200 select-none rounded-lg bg-red-200 p-8"
+          className="w-200 select-none rounded-lg bg-[var(--box-bg)] p-8 text-[var(--button-color)]"
         >
           View Projects
         </button>

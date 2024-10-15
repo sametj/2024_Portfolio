@@ -490,7 +490,7 @@ export default function Model(props) {
               material={materials.PaletteMaterial001}
             />
             <Html center distanceFactor={2}>
-              <div className="h-400 w-850 bg-green-400 p-20">
+              <div className="h-310 w-650 bg-green-400 p-20">
                 <ProjectCard />
               </div>
             </Html>

@@ -53,6 +53,9 @@ export default {
       borderRadius: generateBorderRadius(),
       fontSize: generateFontSize(),
       spacing: generateSpacing(),
+      fontFamily: {
+        body: ['JetBrains Mono']
+      }
     },
   },
   plugins: [],
