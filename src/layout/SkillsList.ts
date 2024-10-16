@@ -1,5 +1,5 @@
 
-export const skillList = [
+export const SKILLS = [
   {
     text: "HTML",
     icon: "/html5.svg",

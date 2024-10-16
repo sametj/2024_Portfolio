@@ -7,9 +7,8 @@ import {
 } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import React, { useContext, useEffect } from "react";
+import ProjectUi from "../ui/ProjectUi";
 import desk from "./3D_Desk-transformed.glb";
-
-import ProjectCard from "../ProjectCard";
 
 export default function Model(props) {
   const { nodes, materials } = useGLTF(desk);
@@ -490,9 +489,7 @@ export default function Model(props) {
               material={materials.PaletteMaterial001}
             />
             <Html center distanceFactor={2}>
-              <div className="h-310 w-650 bg-green-400 p-20">
-                <ProjectCard />
-              </div>
+              <ProjectUi />
             </Html>
           </group>
           <mesh

@@ -5,13 +5,13 @@
 @tailwind utilities;
 
 :root {
-  --box-bg: #7469b6;
-  --box-border-color: black;
-  --button-color: #ffe6e6;
+  --box-bg: #392f5a;
+  --box-border-color: #818d92;
+  --button-color: #ffe6e6de;
 }
 
 #root {
-  background-color: #ffe6e6;
+  background-color: #8b85c1;
   color: #f6f6f6;
 }
 
@@ -19,7 +19,7 @@
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #b5f05c transparent;
+  scrollbar-color: #2cf6b3 transparent;
 }
 
 /* Chrome, Edge, and Safari */

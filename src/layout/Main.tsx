@@ -1,12 +1,12 @@
 import About from "@/scenes/about/About";
+import Home from "@/scenes/home/Home";
 import Projects from "@/scenes/projects/Projects.jsx";
-import Home from "../scenes/home/Home";
 import Skills from "./components/Skills";
 import SocialButton from "./components/SocialButton";
 import logo from "/logo.svg";
 
 import ReactLenis from "lenis/react";
-import { skillList } from "./SkillsList";
+import { SKILLS } from "./SkillsList";
 import { SOCIALS } from "./socialsList";
 
 export default function Main() {
@@ -37,12 +37,12 @@ export default function Main() {
         </div>
 
         <div className="row-span-2 grid grid-rows-1 gap-10 rounded-2xl shadow-md shadow-stone-700">
-          <span className="fixed z-10 mx-10 my-8 flex h-50 w-280 items-center justify-center border-b-2 bg-transparent text-center text-2xl font-bold text-[var(--button-color)] backdrop-blur-lg">
+          <span className="fixed z-10 mx-10 my-8 flex h-50 w-270 items-center justify-center rounded-md border-b-2 border-l-2 border-r-2 bg-transparent text-center text-2xl font-bold text-[var(--button-color)] backdrop-blur-lg">
             Skills
           </span>
           <ReactLenis className="relative row-span-1 row-start-1 flex flex-col gap-20 overflow-auto rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8">
             <div className="mt-60 flex flex-col justify-center gap-20">
-              {skillList.map((skill) => (
+              {SKILLS.map((skill) => (
                 <Skills key={skill.text} icon={skill.icon} text={skill.text} />
               ))}
             </div>
