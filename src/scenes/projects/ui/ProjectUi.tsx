@@ -11,6 +11,8 @@ export default function ProjectUi() {
             Title={project.Title}
             Image={project.Image}
             Stack={project.Stack}
+            link={project.Link}
+            github={project.GitHub}
           />
         ))}
       </div>

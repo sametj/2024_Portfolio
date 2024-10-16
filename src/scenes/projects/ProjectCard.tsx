@@ -4,10 +4,14 @@ export default function ProjectCard({
   Title,
   Image,
   Stack,
+  github,
+  link,
 }: {
   Title: string;
   Image: string;
   Stack?: string;
+  github: string;
+  link?: string;
 }) {
   return (
     <div
@@ -41,22 +45,28 @@ export default function ProjectCard({
             {Stack}
           </span>
         </div>
-        <div className="flex gap-20 p-20">
-          <button
-            className={classNames(
-            `mt-10 h-40 w-200 rounded-xl bg-[#9B7EDE] font-bold text-white`,
-            )}
-          >
-            Live
-          </button>
+        <div className="flex items-center justify-center gap-20 p-20">
+          {link && (
+            <a
+              href={link}
+              target="_blank"
+              className={classNames(
+                `mt-10 flex h-40 w-200 cursor-pointer items-center justify-center rounded-xl bg-[#9B7EDE] font-bold text-white transition-all duration-300 hover:bg-[#6843c0]`,
+              )}
+            >
+              Live
+            </a>
+          )}
 
-          <button
+          <a
+            href={github}
+            target="_blank"
             className={classNames(
-              `mt-10 h-40 w-200 rounded-xl bg-[#9B7EDE] font-bold text-white`,
+              `mt-10 flex h-40 w-200 cursor-pointer items-center justify-center rounded-xl bg-[#9B7EDE] font-bold text-white transition-all duration-300 hover:bg-[#6843c0]`,
             )}
           >
             GitHub
-          </button>
+          </a>
         </div>
       </div>
     </div>

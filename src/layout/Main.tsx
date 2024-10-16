@@ -26,7 +26,7 @@ export default function Main() {
         </div>
       </header>
       <main className="grid grid-cols-[300px_minmax(400px,_1fr)_300px] grid-rows-[1fr_200px] gap-10">
-        <div className="row-span-1 row-start-1 flex rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8 shadow-md shadow-stone-700">
+        <div className="relative row-span-1 row-start-1 flex overflow-hidden rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8 shadow-md shadow-stone-700">
           <Home />
         </div>
         <div className="relative row-span-1 row-start-2 flex rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8 shadow-md shadow-stone-700">

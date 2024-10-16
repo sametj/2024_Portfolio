@@ -5,16 +5,16 @@ import { useContext } from "react";
 import Desk from "./model/3D_Desk";
 
 export default function Projects() {
-  const { setViewProject } = useContext(ProjectContext);
+  const { viewProject, setViewProject } = useContext(ProjectContext);
 
   return (
     <>
       <div className="absolute inset-x-0 bottom-0 z-10 flex w-full justify-center p-40">
         <button
           onClick={() => setViewProject((state) => !state)}
-          className="w-200 select-none rounded-lg border-2 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8 text-lg font-bold text-white"
+          className="w-200 select-none rounded-lg border-2 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8 text-lg font-bold text-white transition-all duration-300 hover:bg-[var(--box-border-color)] hover:text-[var(--box-bg)]"
         >
-          View Projects
+          {viewProject ? "Close" : "View Projects"}
         </button>
       </div>
       <Canvas
