@@ -37,11 +37,11 @@ export default function Main() {
         </div>
 
         <div className="row-span-2 grid grid-rows-1 gap-10 rounded-2xl shadow-md shadow-stone-700">
-          <span className="fixed z-10 mx-10 my-8 flex h-50 w-270 items-center justify-center rounded-md border-b-2 border-l-2 border-r-2 bg-transparent text-center text-2xl font-bold text-[var(--button-color)] backdrop-blur-lg">
-            Skills
-          </span>
           <ReactLenis className="relative row-span-1 row-start-1 flex flex-col gap-20 overflow-auto rounded-2xl border-4 border-[var(--box-border-color)] bg-[var(--box-bg)] p-8">
-            <div className="mt-60 flex flex-col justify-center gap-20">
+            <span className="flex h-40 items-center justify-center rounded-lg border-2 text-center">
+              Skills
+            </span>
+            <div className="mt-30 flex flex-col justify-center gap-20">
               {SKILLS.map((skill) => (
                 <Skills key={skill.text} icon={skill.icon} text={skill.text} />
               ))}
