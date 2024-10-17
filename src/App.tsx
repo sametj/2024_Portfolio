@@ -15,7 +15,7 @@ function App() {
   }, [scroll]);
 
   return (
-    <div className="container mx-auto grid h-dvh grid-rows-[100px_700px_100px] gap-10 overflow-y-hidden px-10 py-60 font-body font-semibold">
+    <div className="container mx-auto grid h-dvh grid-rows-[100px_700px_100px] gap-10 overflow-auto px-10 py-60 font-body font-semibold">
       <Leva />
       <ProjectContext.Provider value={{ viewProject, setViewProject }}>
         <Main />
